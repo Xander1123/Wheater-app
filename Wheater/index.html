@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>24-Hour Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-header fade-in">
+        <h1>24-Hour Weather</h1>
+        <div class="time-display">
+          <div class="time-card" id="current-time">14:30</div>
+          <div class="time-card" id="current-date">2023-07-15</div>
+        </div>
+      </div>
+
+      <div class="search fade-in">
+        <input
+          type="text"
+          placeholder="Enter city name..."
+          id="city-input"
+          value="Baku"
+        />
+        <button id="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+      <div class="weather-content fade-in">
+        <div class="weather-icon">
+          <img
+            id="weather-icon"
+            src="https://cdn-icons-png.flaticon.com/512/6974/6974833.png"
+            alt="Weather Icon"
+          />
+        </div>
+
+        <div class="temperature">
+          <h1 id="temperature">24°C</h1>
+          <h2>
+            <span id="weather-condition">Sunny</span>,
+            <span id="city-name">Baku</span>
+          </h2>
+        </div>
+
+        <div class="details">
+          <div class="col">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/7405/7405863.png"
+              alt="Humidity"
+            />
+            <div class="info">
+              <p>HUMIDITY</p>
+              <div class="value" id="humidity">65%</div>
+            </div>
+          </div>
+
+          <div class="col">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/414/414927.png"
+              alt="Wind"
+            />
+            <div class="info">
+              <p>WIND SPEED</p>
+              <div class="value" id="wind-speed">12 km/h</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer fade-in" id="footer">
+        <p>Updated: <span id="update-time">14:30</span> • OpenWeatherMap</p>
+      </div>
+    </div>
+
+  <script src="main.js"></script>
+  </body>
+</html>
